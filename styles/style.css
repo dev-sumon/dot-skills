@@ -113,20 +113,85 @@
 .post-section .card .card-details span i{
     color: #FFD700;
 }
+.forum-section {
+    padding: 20px 0;
+}
+.forum-section .forum{
+    
+}
+.forum-section .forum {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    border: 1px solid red;
+    padding: 20px;
+    background-color: #faf1f2;
+}
+.forum-section .forum .image img {
+    max-width: 100%;
+    height: auto;
+}
+.forum-section .forum .details {
+    width: 100%;
+}
+.forum-section .forum .details .question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.forum-section .forum .details .icons {
+    display: flex;
+    gap: 10px;
+}
+.forum-section .forum .answer {
+    margin-top: 15px;
+    color: #ccc;
+}
 
+.forum-section .forum .date-time {
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #999;
+}
+
+.date-time a {
+    color: #ffa500;
+    text-decoration: none;
+}
+.date-time a:hover {
+    text-decoration: underline;
+}
 .footer-section{
     background-color: #0e0d0d;
     padding: 40px 0;
     margin-top: 40px;
 }
 .footer-section .footer-head .footer-menu ul li a{
+    position: relative;
     font-family: "Kumbh Sans", serif;
     font-weight: 700;
     font-style: normal;
     font-size: 15px;
     line-height: 24px;
     padding-top: 10px;
+    padding-left: 0px;
+    padding-right: 5px;
     color: #d0d0d0;
+    overflow: hidden;
+    margin-left: 20px;
+}
+.footer-section .footer-head .footer-menu ul li a::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #fffc; /* Border color */
+    transition: width 0.3s ease;
+}
+.footer-section .footer-head .footer-menu ul li a:hover::before{
+    width: 100%;
 }
 .footer-section .contact-info .office-address{
     padding-right: 150px;
@@ -148,7 +213,8 @@
     line-height: 30px;
     color: #fffc;
 }
-.footer-section .contact-info .phone-email .email a{
+.footer-section .contact-info .phone-email .email a {
+    position: relative;
     text-decoration: none;
     font-family: "Kumbh Sans", serif;
     font-weight: 400;
@@ -156,6 +222,24 @@
     font-size: 17px;
     line-height: 28px;
     color: #fffc;
+    padding-bottom: 5px;
+    overflow: hidden;
+}
+
+.footer-section .contact-info .phone-email .email a::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #fffc;
+    transition: all 0.3s ease;
+}
+
+.footer-section .contact-info .phone-email .email a:hover::before {
+    right: 100%;
+    width: 0;
 }
 .footer-section .contact-info .Subscribe p{
     font-family: "Kumbh Sans", serif;
@@ -174,4 +258,17 @@
     font-size: 17px;
     line-height: 28px;
     color: #fffc;
+}
+.footer-section .footer-end-setion .social-media-info a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.footer-section .footer-end-setion .social-media-info a i {
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    border: 1px solid #d0d0d0;
+    text-align: center;
+    font-size: 20px;
 }
