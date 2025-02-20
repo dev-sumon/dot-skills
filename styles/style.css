@@ -136,9 +136,9 @@
     justify-content: space-between;
     align-items: center;
 }
-.forum-section .forum .details .icons {
-    display: flex;
-    gap: 10px;
+.forum-section .forum .details .icons a{
+    text-decoration: none;
+    color: #0e0d0d;
 }
 .forum-section .forum .answer {
     margin-top: 15px;
