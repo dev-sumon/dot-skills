@@ -134,18 +134,18 @@
     column-gap: 40px;
 }
 @keyframes shadowRotate {
-    0% { box-shadow: 5px 5px 15px rgba(247, 111, 48, 0.3); }
-    25% { box-shadow: -5px 5px 15px rgba(236, 115, 59, 0.3); }
-    50% { box-shadow: -5px -5px 15px rgba(214, 117, 73, 0.3); }
-    75% { box-shadow: 5px -5px 15px rgba(236, 115, 59, 0.3); }
-    100% { box-shadow: 5px 5px 15px rgba(224, 90, 28, 0.3); }
+    0% { box-shadow: 10px 10px 20px rgba(236, 115, 59, 0.6); }
+    25% { box-shadow: -10px 10px 20px rgba(236, 115, 59, 0.6); }
+    50% { box-shadow: -10px -10px 20px rgba(236, 115, 59, 0.6); }
+    75% { box-shadow: 10px -10px 20px rgba(236, 115, 59, 0.6); }
+    100% { box-shadow: 10px 10px 20px rgba(236, 115, 59, 0.6); }
 }
 
 .food_section .iteam {
     background: #fff;
     padding: 15px;
     border-radius: 10px;
-    animation: shadowRotate 10s infinite linear;
+    animation: shadowRotate 5s infinite linear;
 }
 
 .food_section .food_iteam .iteam .image_title img{
