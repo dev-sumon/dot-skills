@@ -57,6 +57,31 @@
     bottom: 10%;
     left: 8%;
 }
+.navbar .collapse ul li a{
+    position: relative;
+    font-family: "Kumbh Sans", serif;
+    font-weight: 700;
+    font-style: normal;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    line-height: 24px;
+    overflow: hidden;
+}
+.navbar .collapse ul li a::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #fffc;
+    transition: width 0.3s ease;
+}
+.navbar .collapse ul li a:hover:before{
+    width: 100%;
+}
+
+/* post-section css start  */
 .post-section{
     padding-top: 50px;
     padding-bottom: 50px;
@@ -69,125 +94,69 @@
     color: #1b1b1b;
     font-size: 57px;
     line-height: 60px;
-    padding: 0px 160px;
-}
-.post-section .post-card .card .card-details img{
-    width: 100% !important;
-    height: auto;
-}
-.post-section
-{
-    margin-bottom: 200px;
-}
-.navbar .collapse ul li a{
-    font-family: "Kumbh Sans", serif;
-    font-weight: 700;
-    font-style: normal;
-    color: rgb(255, 255, 255);
-    font-size: 16px;
-    line-height: 24px;
-}
-.post-section .post-card .card{
-    height: 450px;
-    object-fit: cover;
-    padding: 30px !important;
-}
-.post-section .card .card-details h4 {
-    font-family: "Kumbh Sans", serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 22px;
-    line-height: 19px;
-    padding-top: 20px;
-    color: #1b1b1b;
-}
-.post-section .card .card-details p {
-    font-family: "Kumbh Sans", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 19px;
-    line-height: 18px;
-    padding-top: 10px;
-    color: #d0d0d0;
-}
-.post-section .card .card-details span i{
-    color: #FFD700;
-}
-/* foood section css start  */
-.food_section{
-    padding-top: 50px;
-    padding-bottom: 50px;
-    background-color: #faf1f2;
-}
-.food_section .post-title h2{
-    font-family: "Kumbh Sans", serif;
-    font-weight: 700;
-    font-style: normal;
-    color: #1b1b1b;
-    font-size: 57px;
-    line-height: 60px;
     padding: 10px 160px;
 }
-.food_section .food_iteam{
+.post-section .post-iteam{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 40px;
 }
-@keyframes shadowRotate {
-    0% { box-shadow: 10px 10px 20px rgba(236, 115, 59, 0.6); }
-    25% { box-shadow: -10px 10px 20px rgba(236, 115, 59, 0.6); }
-    50% { box-shadow: -10px -10px 20px rgba(236, 115, 59, 0.6); }
-    75% { box-shadow: 10px -10px 20px rgba(236, 115, 59, 0.6); }
-    100% { box-shadow: 10px 10px 20px rgba(236, 115, 59, 0.6); }
-}
-
-.food_section .iteam {
+.post-section .iteam {
     background: #fff;
     padding: 15px;
     border-radius: 10px;
-    animation: shadowRotate 5s infinite linear;
+    box-shadow: -6px 0px 16px rgba(122, 119, 119, 0.2), 3px 0px 8px rgba(128, 128, 128, 0.2);
 }
-
-.food_section .food_iteam .iteam .image_title img{
+.post-section .post-iteam .iteam .image_title img{
     width: 100%;
     border-radius: 5px;
 }
-.food_section .food_iteam .iteam .image_title h3{
+.post-section .post-iteam .iteam .image_title h3{
     padding: 5px 0px 8px 0px;
     color: #1ca362;
 }
-.food_section .food_iteam .iteam .price_order{
+.post-section .post-iteam .iteam .read-more{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-top: 5px;
 }
-.food_section .food_iteam .iteam .price_order strong{
+.post-section .post-iteam .iteam .read-more strong{
     color: #1ca362;
 }
-.food_section .food_iteam .iteam .price_order a{
+.post-section .post-iteam .iteam .read-more a{
+    position: relative;
     text-decoration: none;
     padding: 5px;
-    border: 2px solid #1ca362;
     border-radius: 5px;
     color: orange;
     transition: all .3s;
     cursor: pointer;
+    overflow: hidden;
 }
-.food_section .food_iteam .iteam .price_order a:hover{
-    color: #1ca362;
-    background-color: orange;
+.post-section .post-iteam .iteam .read-more a::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #1ca362;
+    transition: width 0.3s ease;
 }
-/* food section section css end  */
-/* feedback section css start  */
-.feedback_section{
+.post-section .post-iteam .iteam .read-more a:hover::before{
+    width: 100%;
+} 
+/* post-section section css end  */
+/* forum-slider-section css start  */
+.forum-slider-section{
     padding-top: 50px;
 }
-.feedback_section{
+.forum-slider-section{
     padding-top: 50px;
     /* padding-bottom: 80px; */
 }
-.feedback_section h2{
+.forum-slider-section h2{
     font-size: 32px;
     font-weight: 600;
     color: #122C35;
@@ -196,7 +165,7 @@
     text-align: center;
 }
 
-.feedback_section .title{
+.forum-slider-section .title{
     display: flex;
     align-items: center;
     column-gap: 25px;
@@ -214,12 +183,12 @@
     text-align: center !important;
     font-size: 50px !important;
 }
-.feedback_section .flex_column {
+.forum-slider-section .flex_column {
     background-color: #faf1f2;
     padding: 15px;
     border-radius: 10px;
 }
-.feedback_section h3{
+.forum-slider-section h3{
     font-size: 20px;
     font-weight: 700;
     padding-top: 15px;
@@ -227,14 +196,14 @@
     color: #1ca362;
     cursor: pointer;
 }
-.feedback_section P{
+.forum-slider-section P{
     font-size: 16px;
     font-weight: 400;
     color: #333;
     padding-top: 15px;
     line-height: 22px;
 }
-.feedback_section a {
+.forum-slider-section a {
     text-decoration: none;
     color: #1ca362;
     display: inline-block;
@@ -244,11 +213,11 @@
     border-bottom: 2px solid transparent;
     padding-bottom: 2px;
 }
-.feedback_section a:hover{
+.forum-slider-section a:hover{
     color: orange;
     border-bottom: 2px solid orange;
 }
-/* feedback section css end  */
+/* forum-slider-section css end  */
 .forum-section {
     padding: 20px 0;
 }
@@ -320,7 +289,7 @@
     bottom: 0;
     width: 0;
     height: 2px;
-    background-color: #fffc; /* Border color */
+    background-color: #fffc;
     transition: width 0.3s ease;
 }
 .footer-section .footer-head .footer-menu ul li a:hover::before{
