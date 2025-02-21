@@ -113,6 +113,128 @@
 .post-section .card .card-details span i{
     color: #FFD700;
 }
+/* foood section css start  */
+.food_section{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #faf1f2;
+}
+.food_section .post-title h2{
+    font-family: "Kumbh Sans", serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #1b1b1b;
+    font-size: 57px;
+    line-height: 60px;
+    padding: 10px 160px;
+}
+.food_section .food_iteam{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 40px;
+}
+.food_section .food_iteam .iteam .image_title img{
+    width: 100%;
+    border-radius: 5px;
+}
+.food_section .food_iteam .iteam .image_title h3{
+    padding: 5px 0px 8px 0px;
+    color: #1ca362;
+}
+.food_section .food_iteam .iteam .price_order{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 5px;
+}
+.food_section .food_iteam .iteam .price_order strong{
+    color: #1ca362;
+}
+.food_section .food_iteam .iteam .price_order a{
+    text-decoration: none;
+    padding: 5px;
+    border: 2px solid #1ca362;
+    border-radius: 5px;
+    color: orange;
+    transition: all .3s;
+    cursor: pointer;
+}
+.food_section .food_iteam .iteam .price_order a:hover{
+    color: #1ca362;
+    background-color: orange;
+}
+/* food section section css end  */
+/* feedback section css start  */
+.feedback_section{
+    padding-top: 50px;
+}
+.feedback_section{
+    padding-top: 50px;
+    /* padding-bottom: 80px; */
+}
+.feedback_section h2{
+    font-size: 32px;
+    font-weight: 600;
+    color: #122C35;
+    text-transform: capitalize;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.feedback_section .title{
+    display: flex;
+    align-items: center;
+    column-gap: 25px;
+}
+.feedback_section .main_column{
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 25px; */
+}
+.owl-carousel .owl-item img {
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 1px solid #1ca362;
+    padding: 5px;
+    background: #DDD;
+}
+.feedback_section .flex_column {
+    background-color: #faf1f2;
+    padding: 15px;
+    border-radius: 10px;
+}
+.feedback_section h3{
+    font-size: 20px;
+    font-weight: 700;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    color: #1ca362;
+    cursor: pointer;
+}
+.feedback_section P{
+    font-size: 16px;
+    font-weight: 400;
+    color: #333;
+    padding-top: 15px;
+    line-height: 22px;
+}
+.feedback_section a {
+    text-decoration: none;
+    color: #1ca362;
+    display: inline-block;
+    padding-top: 11px;
+    font-size: 15px;
+    transition: .4s ease;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 2px;
+}
+.feedback_section a:hover{
+    color: orange;
+    border-bottom: 2px solid orange;
+}
+/* feedback section css end  */
 .forum-section {
     padding: 20px 0;
 }
